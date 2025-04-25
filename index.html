@@ -10,6 +10,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <img src="assets/logo.svg" alt="Logo da Lista de Compras">
+    </header>
+
+    <main>
+        <div class="return">
+            <img src="assets/icons/return.svg" alt="Ícone de voltar">
+        </div>
+        
+        <h1>Compras da semana</h1>
+
+        <form id="form">
+            <input type="text" name="item" id="item" placeholder="Adicione um novo item">
+            <button type="submit">Adicionar item</button>
+        </form>
+
+        <ul id="list">
+            <li>
+                <img src="assets/icons/checkbox-default.svg" alt="ícone de checkbox">
+                Pão de forma
+                <img src="assets/icons/trash.svg" alt="ícone de apagar">
+            </li>
+            <li>
+                <img src="assets/icons/checkbox-default.svg" alt="ícone de checkbox">
+                Café preto
+                <img src="assets/icons/trash.svg" alt="ícone de apagar">
+            </li>
+            <li>
+                <img src="assets/icons/checkbox-default.svg" alt="ícone de checkbox">
+                Suco de laranja
+                <img src="assets/icons/trash.svg" alt="ícone de apagar">
+            </li>
+            <li>
+                <img src="assets/icons/checkbox-default.svg" alt="ícone de checkbox">
+                Bolacha
+                <img src="assets/icons/trash.svg" alt="ícone de apagar">
+            </li>
+        </ul>
+
+        <div class="empty">
+            <img src="assets/icons/warning-circle-filled.svg" alt="ícone de aviso">
+            <p></p>
+            <img src="assets/icons/delete-small.svg" alt="ícone de fechar">
+        </div>
+    </main>
     
 
     <script src="scripts/index.js"></script>
