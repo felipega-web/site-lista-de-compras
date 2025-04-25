@@ -37,6 +37,18 @@
     --link-fw: 500;
 }
 
+html, 
+body {
+    height: 100%;
+    background-color: var(--background-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 h1 {
     font-family: var(--ff-base);
     font-size: var(--title-size);
@@ -75,7 +87,7 @@ p {
 
 a {
     text-decoration: none;
-    
+
     font-family: var(--ff-base);
     font-size: var(--link-size);
     line-height: var(--link-lh);

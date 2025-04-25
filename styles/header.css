@@ -1,0 +1,21 @@
+header {
+    padding-block: 1.5625rem 3.875rem;
+
+    & img {
+        width: 9.71875rem;
+        height: 2.5rem;
+
+        cursor: pointer;   
+
+    }
+}
+
+@media (width < 30em) {
+    header {
+        padding-block: 2.125rem;
+
+        & img {
+            display: none;
+        }
+    }
+}
