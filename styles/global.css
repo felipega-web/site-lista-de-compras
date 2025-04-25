@@ -58,22 +58,21 @@ h1 {
     color: var(--content-primary);
 }
 
+input,
 placeholder {
     font-family: var(--ff-base);
     font-size: var(--paragraph-size);
     line-height: 1.4rem;
     font-weight: 400;
-
-    color: var(--content-tertiary);
 }
 
-label {
+.label {
     font-family: var(--ff-base);
     font-size: var(--label-size);
     line-height: var(--label-lh);
     font-weight: var(--label-fw);
 
-    color: var(--content-always-white);
+    color: var(--always-white);
 }
 
 p {
@@ -94,4 +93,17 @@ a {
     font-weight: var(--link-fw);
 
     color: var(--color-brand);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-family: var(--ff-base);
+    font-size: var(--paragraph-size);
+    line-height: var(--paragraph-lh);
+    font-weight: var(--paragraph-fw);
+
+    color: var(--content-secondary);
 }

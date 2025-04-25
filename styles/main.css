@@ -1,0 +1,136 @@
+main {
+
+    & img,
+    & button {
+        cursor: pointer;
+    }
+
+    & img[src*="return"] {
+        width: 3.5625rem;
+        height: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    & h1 {
+        margin-bottom: 2.75rem;
+    }
+
+    & form {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2.5rem;
+
+        & input {
+            width: 28.1875rem;
+            height: 2.75rem;
+            border-radius: .75rem;
+            border: 2px solid var(--border-primary);
+            padding-left: 1.125rem;
+            padding-block: .6875rem;
+
+            &::placeholder {
+                color: var(--content-tertiary);
+            }
+        }
+
+        & input:hover {
+            border-color: var(--border-hover);
+        }
+
+        & input:focus,
+        & input[type="text"]:focus-within  {
+            outline: 2px solid var(--color-brand);
+
+            &::placeholder {
+                color: var(--content-primary);
+            }
+
+        }
+
+        & button {
+            width: 10rem;
+            height: 2.75rem;
+            border-radius: .75rem;
+            border: none;
+            background-color: var(--color-brand);
+        }
+
+        & button:hover {
+            background-color: var(--color-brand-hover);
+        }
+    }
+
+    & ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2.25rem;
+
+        & li {
+            display: flex;
+            align-items: center;
+            position: relative;
+            gap: .75rem;            
+            border-radius: .75rem;
+            padding-block: 1rem;
+            padding-inline: .75rem;
+            background-color: var(--background-secondary);
+
+            & img {
+                width: 1rem;  
+                height: 1rem;    
+                
+                &[src*="trash"] {
+                    margin-left: auto;
+                }
+            }
+
+            & p {
+                color: var(--content-primary);            
+            }   
+        }
+    }
+
+    & div.empty {
+        display: flex;
+        visibility: hidden;
+        align-items: center;
+        position: relative;
+        flex-direction: row;
+        gap: 1rem;            
+        border-radius: .75rem;
+        padding: .75rem;
+        background-color: var(--color-danger);
+        margin-bottom: 5rem;
+
+        & img {
+            filter: invert(1);
+            
+            &[src*="warning"] {
+                width: 1.1675rem;
+                height: 1.1675rem;
+            }
+            
+            &[src*="delete"] {
+                width: 1.25rem;
+                height: 1.25rem;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+@media (width < 30em) {
+    main {
+        & form {
+            flex-direction: column;
+
+            & input,
+            & button {
+                width: 20.375rem;
+            }
+        }
+    }
+}
